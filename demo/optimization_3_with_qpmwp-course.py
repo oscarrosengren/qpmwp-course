@@ -103,6 +103,7 @@ constraints.add_budget(rhs=1, sense='=')
 # Add box constraints (i.e., lower and upper bounds)
 constraints.add_box(lower=0, upper=0.2)
 
+
 # Add linear constraints
 G = pd.DataFrame(np.zeros((2, N)), columns=constraints.ids)
 G.iloc[0, 0:5] = 1
